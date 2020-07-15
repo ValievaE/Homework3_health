@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPressure">
+
+    <EditText
+        android:id="@+id/topPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:ems="10"
+        android:hint="@string/hint_topPressure"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lowerPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/hint_lowerPressure"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/topPressure"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/topPressure"
+        app:layout_constraintTop_toBottomOf="@+id/topPressure" />
+
+    <EditText
+        android:id="@+id/pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/hint_pulse"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/lowerPressure"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lowerPressure"
+        app:layout_constraintTop_toBottomOf="@+id/lowerPressure" />
+
+    <Button
+        android:id="@+id/buttonSavePressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/buttonSavePressure"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/pulse"
+        app:layout_constraintStart_toStartOf="@+id/pulse"
+        app:layout_constraintTop_toBottomOf="@+id/pulse" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/tachycardia"
+        android:textColor="#151414"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/pulse"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/pulse"
+        app:layout_constraintTop_toBottomOf="@+id/pulse" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_date"
+        app:layout_constraintBottom_toTopOf="@+id/topPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

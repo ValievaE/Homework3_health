@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Your health</string>
+    <string name="title_name">Комплексная система мониторинга здоровья Валиева Е.</string>
+    <string name="hint_name">ФИО</string>
+    <string name="hint_age">Возраст</string>
+    <string name="buttonSave">Сохранить</string>
+    <string name="buttonWeight">Ввести вес</string>
+    <string name="buttonPressure">Ввести давление</string>
+    <string name="emptyfield">Вы ввели не все данные</string>
+    <string name="errorformat">Неверный формат ввода</string>
+    <string name="hint_weight">Вес</string>
+    <string name="hint_foots">Количество шагов</string>
+    <string name="buttonSaveWeight">Сохранить</string>
+    <string name="hint_topPressure">Верхнее давление</string>
+    <string name="hint_lowerPressure">Нижнее давление</string>
+    <string name="hint_pulse">Пульс</string>
+    <string name="tachycardia">У вас тахикардия</string>
+    <string name="hint_date">Дата замеров</string>
+    <string name="buttonSavePressure">Сохранить</string>
+</resources>
